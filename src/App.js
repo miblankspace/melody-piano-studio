@@ -1,12 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
 import './App.css';
-import { Button } from '@mui/material';
 
 function App() {
   return (
-   <>
-    <Button variant="contained">Hi</Button>
-   </>
+    <>
+    <Router>
+        <Navbar />
+        <Routes>
+            <Route path='/' /> 
+        </Routes>
+      </Router>
+    </>
   );
 }
 
