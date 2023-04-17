@@ -7,15 +7,13 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    border: solid;
 }
   
 .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    border:solid;
 }
   
 .navbar-logo {
@@ -26,29 +24,16 @@
     font-size: 2rem;
     align-items: center;
     margin-left: 20px;
-    border: solid;
     font-weight: bold;
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 58vw;
-  justify-content: end;
-  margin-right: 2rem;
-}
-/*
-.nav-menu {
   display: flex;
+  margin-left: 200px;
   list-style: none;
   text-align: center;
   justify-content: end;
-  border: solid;
-  padding: 0 200px;
-}*/
+}
 
 .nav-item {
   height: 80px;
@@ -68,15 +53,6 @@
   transition: all 0.2s ease-out;
 }
 /*
-  
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
-    transition: all 0.2s ease-out;
-  }
-  
-  .fa-bars {
-    color: #fff;
-  }
   
   .nav-links-mobile {
     display: none;

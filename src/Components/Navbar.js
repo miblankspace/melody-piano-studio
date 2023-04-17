@@ -10,13 +10,23 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [button, showButton] = useState(false);
 
+    function handleClick() {
+        setClick(!click);
+    }
+
+    function showMobile() {
+        showButton(true);
+    }
+    
+    window.addEventListener('resize');
+
     return (
         <>
           <nav className='navbar'>
               <Link to='/' className='navbar-logo'>
                 <PianoIcon fontSize='inherit' /> MELODY PIANO STUDIO 
               </Link>
-              <ul className='nav-menu'>
+              <ul className={click? 'nav-menu-active' : 'nav-menu'}>
                 <li className='nav-item'>
                     <Link to='/' className='nav-links'>
                         Home
@@ -42,6 +52,7 @@ function Navbar() {
 
         </>
   )
+
 }
 
 export default Navbar
