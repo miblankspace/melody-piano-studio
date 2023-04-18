@@ -73,7 +73,7 @@
     width: 100%;
     position: absolute;
     top: -500%;
-    transition: all 0.7s ease-in;
+    transition: all 0.3s ease-in;
     z-index: -999;
   }
   
@@ -84,8 +84,8 @@
     position: absolute;
     align-items: center;
     top: 80px;
-    z-index: 1;
-    transition: all 0.7s ease-in;
+    z-index: -999;
+    transition: all 0.3s ease-in;
   }
 
   .nav-item {
