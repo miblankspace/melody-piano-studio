@@ -8,25 +8,32 @@ import './Navbar.css'
 function Navbar() {
 
     const [click, setClick] = useState(false);
-    const [button, showButton] = useState(false);
 
-    function handleClick() {
-        setClick(!click);
-    }
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
-    function showMobile() {
-        showButton(true);
-    }
+    const checkMobileMenu = () => {
+      if(window.innerWidth >= 910) {
+        setClick(false)
+      }
+    };
+
+    useEffect(() => {
+      checkMobileMenu()
+    }, [])
+    window.addEventListener('resize', checkMobileMenu);
     
-    window.addEventListener('resize');
-
     return (
         <>
           <nav className='navbar'>
-              <Link to='/' className='navbar-logo'>
+            <div className='navbar-container'>
+              <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                 <PianoIcon fontSize='inherit' /> MELODY PIANO STUDIO 
               </Link>
-              <ul className={click? 'nav-menu-active' : 'nav-menu'}>
+              <div className="menu-icon" onClick={handleClick}>
+                {click ? <CloseIcon /> : <MenuIcon />}
+              </div>
+              <ul className={click? 'nav-menu-active' : 'nav-menu'} onClick={closeMobileMenu}>
                 <li className='nav-item'>
                     <Link to='/' className='nav-links'>
                         Home
@@ -48,6 +55,7 @@ function Navbar() {
                     </Link>
                 </li>
               </ul>
+            </div>
           </nav>
 
         </>
