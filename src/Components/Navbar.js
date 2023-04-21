@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
-import PianoIcon from '@mui/icons-material/Piano';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import './Navbar.css'
@@ -28,7 +27,8 @@ function Navbar() {
           <nav className='navbar'>
             <div className='navbar-container'>
               <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                <PianoIcon fontSize='inherit' /> MELODY PIANO STUDIO 
+                <img src='/images/logo-no-bg.png' alt='logo' width='90px' height='90px' />
+                Melody Piano Studio 
               </Link>
               <div className="menu-icon" onClick={handleClick}>
                 {click ? <CloseIcon /> : <MenuIcon />}
