@@ -1,16 +1,8 @@
 import React from 'react';
 import { Button } from '@mui/material';
-import './HeroSection.css';
-import Slider from './Slider';
+import './HeroSlide1.css';
 
-function HeroSection() {
-
-  const slides = [
-    {url: 'http://localhost:3000/images/bg-img1.jpg'},
-    {url: 'http://localhost:3000/images/bg-img2.jpg'},
-    {url: 'http://localhost:3000/images/bg-img1.jpg'},
-    {url: 'http://localhost:3000/images/bg-img2.jpg'},
-  ]
+function HeroSlide1() {
 
   const btnStyle1 = {
     padding: '10px 20px',
@@ -29,9 +21,6 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
-      <div className='slider-container'>
-        <Slider slides={slides}/>
-      </div>
       <div className='text-container'>
         <h1>Melody Piano Studio</h1>
         <p>Quality and Affordable Music Lessons</p>
@@ -44,4 +33,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+export default HeroSlide1
