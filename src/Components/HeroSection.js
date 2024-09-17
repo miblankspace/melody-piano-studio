@@ -36,8 +36,12 @@ function HeroSection() {
         <h1>Melody Piano Studio</h1>
         <p>Quality and Affordable Music Lessons</p>
         <div className='btn-container'>
-          <Button style={btnStyle2} variant='contained' href='/about-us'>See our Teachers</Button>
-          <Button style={btnStyle1} variant='contained' href='/contact-us'>Book a Lesson</Button>
+          <Button style={btnStyle2} variant='contained' href='/about-us'>
+            See our Teachers
+          </Button>
+          <Button style={btnStyle1} variant='contained' href='/contact-us'>
+            Book a Lesson
+          </Button>
         </div>
       </div>
     </div>

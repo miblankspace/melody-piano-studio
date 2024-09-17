@@ -25,10 +25,12 @@
 
 .left-arrow:hover {
     box-shadow: 0px 5px 5px #acabab;
+    background: #fff;
 }
 
 .right-arrow:hover {
     box-shadow: 0px 5px 5px #acabab;
+    background: #fff;
 }
 
 .rectangle-container {
@@ -61,6 +63,6 @@
     cursor: pointer;
 }
 
-.rectangles:hover {
+.rectangle:hover {
     background-color: #fff;
 }

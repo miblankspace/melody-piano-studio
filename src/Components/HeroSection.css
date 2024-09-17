@@ -1,8 +1,8 @@
 .hero-container {
     display: flex;
     height: 90vh;
-    top: 150px;
     align-items: center;
+    top: 150px;
 }
 
 .slider-container {
